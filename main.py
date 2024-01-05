@@ -11,7 +11,17 @@ the_image = cv.imread('euro.jpg')
 canny_image = cv.Canny(the_image, 100, 200)
 
 
-#
-cv.imshow('canny image', canny_image)
+# show image with OpenCV
+'''cv.imshow('canny image', canny_image)
 cv.waitKey()
-cv.destroyWindow()
+cv.destroyWindow()'''
+
+#show image with matplotlib
+
+plt.subplot(121), plt.imshow(the_image), plt.title('the Original Image')
+plt.xticks([]), plt.yticks([])
+
+plt.subplot(122), plt.imshow(canny_image), plt.title('Detected Image')
+plt.xticks([]), plt.yticks([])
+
+plt.show()
