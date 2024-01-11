@@ -19,6 +19,3 @@ cv.putText(theimage, "the number of contours :" + str(len(contours)), (20, 20), 
 cv.imshow('theimage', theimage)
 cv.waitKey()
 cv.destroyAllWindows()
-
-
-
